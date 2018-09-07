@@ -72,5 +72,36 @@ namespace ABC.BLTest
             //Assert
             Assert.AreEqual(3, Klient.Licznik);
         }
+
+        [TestMethod]
+        public void ZwaljdujTest()
+        {
+            // Arrange (zaranżuj test)
+            var klient = new Klient();
+            klient.Nazwisko = "Nowak";
+            klient.Email = "tomek@dev-hobby.pl";
+            var oczekiwana = true;
+
+            //ACT (działaj)
+            var aktualna = klient.Zwaliduj();
+
+            // Assert (potwierdz test)
+            Assert.AreEqual(oczekiwana, aktualna);
+        }
+
+        [TestMethod]
+        public void ZwaljdujBrakNazwisa()
+        {
+            // Arrange (zaranżuj test)
+            var klient = new Klient();
+            klient.Email = "tomek@dev-hobby.pl";
+            var oczekiwana = false;
+
+            //ACT (działaj)
+            var aktualna = klient.Zwaliduj();
+
+            // Assert (potwierdz test)
+            Assert.AreEqual(oczekiwana, aktualna);
+        }
     }
 }
