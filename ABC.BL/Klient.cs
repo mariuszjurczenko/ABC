@@ -77,7 +77,6 @@ namespace ABC.BL
         /// <summary>
         /// Pobieramy jednego klienta.
         /// </summary>
-
         public Klient Pobierz(int klientId)
         {
             // kod, który pobiera określonego klienta
@@ -87,7 +86,6 @@ namespace ABC.BL
         /// <summary>
         /// Pobieramy wszystkich klientów.
         /// </summary>
-
         public List<Klient> Pobierz()
         {
             // Kod, który pobiera wszystkich klientów
