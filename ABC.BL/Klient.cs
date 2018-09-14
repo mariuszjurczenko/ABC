@@ -4,18 +4,20 @@ namespace ABC.BL
 {
     public class Klient
     {
-        public Klient()
+        public Klient() : this(0)
         {
-
+        
         }
 
         public Klient(int klientId)
         {
             KlientId = klientId;
+            ListaAdresow = new List<Adres>();
         }
 
-        public static int Licznik { get; set; }
+        public List<Adres> ListaAdresow { get; set; } 
 
+        public static int Licznik { get; set; }
 
         private string _nazwisko;
 
