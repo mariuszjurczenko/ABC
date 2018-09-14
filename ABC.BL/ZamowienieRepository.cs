@@ -39,7 +39,7 @@ namespace ABC.BL
             if (zamowienieId == 10)
             {
                 wyswietlanieZamowienia.Imie = "Marcin";
-                wyswietlanieZamowienia.Nazwisko = "Nwak";
+                wyswietlanieZamowienia.Nazwisko = "Nowak";
                 wyswietlanieZamowienia.DataZamowienia = new DateTimeOffset(2018, 4, 14, 10, 00, 00, new TimeSpan(7, 0, 0));
                 wyswietlanieZamowienia.AdresDostawy = new Adres()
                 {
