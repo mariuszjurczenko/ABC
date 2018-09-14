@@ -38,7 +38,7 @@ namespace ABC.BL
         /// Zapisujemy obecnego klienta
         /// </summary>
         /// <returns></returns>
-        public bool Zapisz()
+        public bool Zapisz(Klient klient) 
         {
             // Kod, który zapisuje zdefiniowanego klienta
             return true;
