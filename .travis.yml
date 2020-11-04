@@ -1,4 +1,6 @@
 language: csharp
 solution: ABC.sln
+mono: none
+dotnet: 3.1.6
 script:
  - dotnet restore
